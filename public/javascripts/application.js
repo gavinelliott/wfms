@@ -2,7 +2,7 @@ function ShowHideContent() {
   var self = this;
 
   self.escapeElementName = function(str) {
-    result = str.replace('[', '\\[').replace(']', '\\]')
+    result = str.replace('[', '\\[').replace(']', '\\]');
     return(result);
   };
 
@@ -70,7 +70,7 @@ function ShowHideContent() {
       }
 
     });
-  }
+  };
   self.showHideCheckboxToggledContent = function () {
 
     $(".block-label input[type='checkbox']").each(function() {
@@ -108,7 +108,7 @@ function ShowHideContent() {
       }
 
     });
-  }
+  };
 }
 
 $(document).ready(function() {
@@ -124,4 +124,13 @@ $(document).ready(function() {
   toggleContent.showHideRadioToggledContent();
   toggleContent.showHideCheckboxToggledContent();
 
+});
+
+
+$("tr.select").on("click",function(){
+  if($(this).css("background-color") == 'rgb(204, 204, 204)'){
+    $(this).css("background-color","rgba(0, 0, 0, 0)");
+  }else {
+    $(this).css("background-color","rgb(204, 204, 204)");
+  }
 });

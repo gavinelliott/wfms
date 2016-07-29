@@ -2121,13 +2121,12 @@ input[type=number] {
 }
 
 .select:hover {
-  background: #ccc;
   cursor: pointer;
 }
 
 .data-table {
   display: block;
-  padding-right: 40px;
+  padding-right: 20px;
 }
 
 body, html {
