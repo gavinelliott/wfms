@@ -2125,6 +2125,11 @@ input[type=number] {
   cursor: pointer;
 }
 
+.data-table {
+  display: block;
+  padding-right: 40px;
+}
+
 body, html {
   height: 100%;
 }
