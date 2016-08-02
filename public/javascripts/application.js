@@ -128,9 +128,9 @@ $(document).ready(function() {
 
 
 $("tr.select").on("click",function(){
-  if($(this).css("background-color") == 'rgb(204, 204, 204)'){
+  if($(this).css("background-color") == 'rgb(255, 236, 199)'){
     $(this).css("background-color","rgba(0, 0, 0, 0)");
   }else {
-    $(this).css("background-color","rgb(204, 204, 204)");
+    $(this).css("background-color","rgb(255, 236, 199)");
   }
 });
