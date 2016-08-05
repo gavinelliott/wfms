@@ -1924,14 +1924,6 @@ input[type=number] {
   padding-right: 0;
 }
 
-*:not(.token) {
-  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
-}
-
-#proposition-name {
-  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif !important;
-}
-
 .unbranded {
   background: #fff;
 }
@@ -2127,6 +2119,12 @@ input[type=number] {
 .data-table {
   display: block;
   padding-right: 20px;
+}
+
+.login-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 40px;
 }
 
 body, html {
