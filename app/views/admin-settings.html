@@ -1,0 +1,90 @@
+{% extends "layout_dwp.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">Admin settings</h1>
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h3 class="heading-medium">Add new user</h3>
+      <label class="form-label" for="full-name-f1">Full name</label>
+      <input class="form-control" id="full-name-f1" type="text">
+      <br/>
+      <br/>
+      <label class="form-label" for="email-address">Email address</label>
+      <input class="form-control" id="email-address" type="text">
+      <br/>
+      <br/>
+      <label class="form-label" for="password">Password</label>
+      <input class="form-control" id="password" type="text">
+      <br/>
+      <br/>
+      <input class="button" type="submit" value="Add user">
+    </div>
+  </div>
+
+  <div class="grid-row">
+      <div class="data-table">
+        <h3 class="heading-medium">Users</h3>
+        <table class="user-list">
+          <thead>
+            <tr>
+              <th scope="col">Full name</th>
+              <th scope="col">Email address</th>
+              <th scope="col">User access</th>
+              <th scope="col">Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nicholas Holvast</td>
+              <td>nicholas.holvast@dwp.gsi.gov.uk</td>
+              <td>
+                <label class="form-label visually-hidden" for="select-box-a">Access level</label>
+                <select class="form-control" id="select-box-a">
+                  <option>Super User</option>
+                  <option>Lead Administrator</option>
+                  <option>Administrator</option>
+                </select>
+              </td>
+              <td><input type="checkbox" name="remove" style="text-align: center;" value="Remove"></td>
+            </tr>
+            <tr>
+              <td>Gavin Elliott</td>
+              <td>gavin.elliott@dwp.gsi.gov.uk</td>
+              <td>
+                <label class="form-label visually-hidden" for="select-box-a">Access level</label>
+                <select class="form-control" id="select-box-a">
+                  <option>Lead Administrator</option>
+                  <option>Super User</option>
+                  <option>Administrator</option>
+                </select>
+              </td>
+              <td><input type="checkbox" name="remove" style="text-align: center;" value="Remove"></td>
+            </tr>
+            <tr>
+              <td>Ian Forster</td>
+              <td>ian.forster@dwp.gsi.gov.uk</td>
+              <td>
+                <label class="form-label visually-hidden" for="select-box-a">Access level</label>
+                <select class="form-control" id="select-box-a">
+                  <option>Administrator</option>
+                  <option>Lead Administrator</option>
+                  <option>Super User</option>
+                </select>
+              </td>
+              <td><input type="checkbox" name="remove" style="text-align: center;" value="Remove"></td>
+            </tr>
+          </tbody>
+        </table>
+        <input class="button" type="submit" value="Update">
+      </div>
+  </div>
+{% endblock %}

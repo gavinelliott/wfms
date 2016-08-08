@@ -2127,6 +2127,11 @@ input[type=number] {
   padding: 20px 40px;
 }
 
+.user-list {
+  margin-bottom: 20px;
+  padding: 0 50px 0 20px;
+}
+
 body, html {
   height: 100%;
 }
