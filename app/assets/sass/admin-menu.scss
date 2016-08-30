@@ -48,11 +48,13 @@
 .admin-sidebar-wrapper {
   float:left;
   width: 15%;
-  height: 100%;
+  height: auto;
   position:relative;
 
-  /* Smartphones (portrait) ----------- */
-    @media only screen and (max-width : 640px) {
+
+
+  /* Smartphones (portrait) -----------*/
+    @media only screen and (max-width : 960px) {
      width: 100%;
      height: auto;
     }
@@ -61,7 +63,7 @@
 // Sidebar stuff
 .admin-sidebar-content {
   padding: 10px 0;
-  height: 100%;
+  height: auto;
 
   li {
     margin: 10px 0;
@@ -93,10 +95,12 @@
   border-left: 1px solid #BFC1C3;
   display: table;
 
-    @media only screen and (max-width : 640px) {
+  @media only screen and (max-width : 1280px) {
      width: 100%;
+     height: 100%;
+     border-left: none;
      border-top: 1px solid #BFC1C3;
-    }
+   }
 }
 
 .admin-content {
@@ -165,7 +169,10 @@
   cursor: pointer;
 }
 
-.data-table { display: block; padding: 0 50px 0 20px; }
+.data-table {
+  display: block;
+  padding: 0 30px 0 10px;
+}
 
 
 .login-wrapper {
