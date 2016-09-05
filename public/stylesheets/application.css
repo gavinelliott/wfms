@@ -2000,7 +2000,7 @@ ul.nav-content li a {
   text-decoration: none;
 }
 
-ul.nav-content .navactive {
+.navactive {
   background: #30a197;
 }
 
