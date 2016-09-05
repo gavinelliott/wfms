@@ -88,38 +88,40 @@
           </div>
 
           <div class="admin-header-wrapper">
-            <div class="admin-header-content">
-              <ul>
+
+              
+                <ul class="nav-content">
+                  <li><a href="late">Late</a></li>
+                  <li><a href="forms">Forms</a></li>
+                  <li><a href="utilities">Utilities</a></li>
+                  <li><a href="restrict-access">Restrict Access</a></li>
+                  <li><a href="window">Window</a></li>
+                </ul>
+
+
+
+
+              <ul class="admin-header-content">
                 <li><a href="/admin-settings">Admin Settings</a></li>
                 <li>Nick Holvast: <a href="#">Log out</a></li>
               </ul>
-            </div>
+
           </div>
         </header>
 
         {% block after_header %}{% endblock %}
 
-        <div class="admin-wrapper">
-            <div class="admin-sidebar-wrapper">
-                <div class="admin-sidebar-content">
-                  <ul>
-                    <li><a href="/">Late</a></li>
-                    <li><a href="forms">Forms</a></li>
-                    <li><a href="#">Utilities</a></li>
-                    <li><a href="#">Restrict Access</a></li>
-                    <li><a href="#">Window</a></li>
-                  </ul>
-                </div>
-              </div>
-
-
-
+    <div class="admin-wrapper">
             <div class="admin-content-wrapper">
               <div class="admin-content">
                 {% block content %}{% endblock %}
               </div>
             </div>
         </div>
+
+
+
+
 
         <footer>
         </footer>

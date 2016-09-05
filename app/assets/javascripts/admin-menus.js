@@ -6,20 +6,29 @@ $(document).ready(function () {
     url = '/';
   }
 
-  // Check the href of each link in the sidebar
-  $('.admin-sidebar-content a').each(function () {
+  // Check the href of each link in the main-nav
+  $('.nav-content a').each(function () {
     if (url === $(this).attr('href')) {
       // If the href matches the current URL set it as active
-      $(this).parents('li').addClass('active');
+      $(this).parents('li').addClass('navactive');
     }
   });
+
+
+  // // Check the href of each link in the sidebar
+  // $('.admin-sidebar-content a').each(function () {
+  //   if (url === $(this).attr('href')) {
+  //     // If the href matches the current URL set it as active
+  //     $(this).parents('li').addClass('active');
+  //   }
+  // });
 
   // Tab Panes
   $('.admin-panes').each(function() {
     $(this).children('div').hide();
     $(this).children('.admin-pane:first').show();
     $(this).parent().find('li:first').addClass('active');
-    $(this).parents('.admin-submenu-container').find('h1').text($('.active').find('a').text());
+    $(this).parents('.admin-submenu-container').find('h1').text($('.active:nth-child(1)').find('a').text());
   });
 });
 

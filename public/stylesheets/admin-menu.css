@@ -1,20 +1,18 @@
 .admin-header-wrapper {
   background-color: #DEE0E2;
-  height: 40px;
   text-align: right;
   font-size: 16px;
   width: 100%;
+  height: auto;
 }
 
 .admin-header-content {
-  margin: auto;
   width: 100%;
 }
 
 .admin-header-content li {
   display: inline-block;
-  margin-top: 6px;
-  padding: 4px 10px;
+  padding: 10px 10px;
   border-right: 1px solid #999;
 }
 
@@ -22,87 +20,79 @@
   border-right: none;
 }
 
-.admin-wrapper {
-  clear: both;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: #F8F8F8;
-  display: table;
+ul.nav-content {
+  float: left;
+  height: auto;
 }
 
-.admin-wrapper a {
+ul.nav-content li {
+  float: left;
+}
+
+ul.nav-content li a {
+  display: inline-block;
+  padding: 10px 10px;
   text-decoration: none;
-  color: #000;
 }
 
-.admin-sidebar-wrapper {
-  float: left;
-  width: 15%;
-  height: auto;
+ul.nav-content .navactive {
+  background: #30a197;
+}
+
+.admin-wrapper {
   position: relative;
-  /* Smartphones (portrait) -----------*/
-}
-
-@media only screen and (max-width: 960px) {
-  .admin-sidebar-wrapper {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.admin-sidebar-content {
-  padding: 10px 0;
-  height: auto;
-}
-
-.admin-sidebar-content li {
-  margin: 10px 0;
-}
-
-.admin-sidebar-content li a {
-  display: block;
-  padding: 10px 0 10px 30px;
-}
-
-.admin-sidebar-content li.active a {
-  background-color: #30A197;
-  color: #fff;
-}
-
-.admin-sidebar-content ul li ul a {
-  padding-left: 50px;
-}
-
-.admin-content-wrapper {
+  clear: both;
   float: left;
-  width: 84.85%;
-  height: 100%;
-  background: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*.admin-wrapper .admin-column-wrapper {
+      float:left;
+      width:200%;
+      position:relative;
+      left: 20%;
+      background:#fff;
+      border-left: 2px solid #999;
+    }*/
+.admin-wrapper .admin-content-wrapper {
+  padding: 20px;
   padding-bottom: 1em;
-  border-left: 1px solid #BFC1C3;
-  display: table;
 }
 
-@media only screen and (max-width: 1280px) {
-  .admin-content-wrapper {
-    width: 100%;
-    height: 100%;
-    border-left: none;
-    border-top: 1px solid #BFC1C3;
-  }
+.admin-wrapper .admin-content {
+  position: relative;
+  overflow: hidden;
 }
 
-.admin-content {
-  padding-left: 50px;
-}
+/*  .admin-wrapper .admin-sidebar-wrapper {
+      float:left;
+      width: 10%;
+      position:relative;
+      right: 10%;
+    }
 
-@media only screen and (max-width: 640px) {
-  .admin-content {
-    padding: 20px;
-  }
-}
+    .admin-sidebar-content {
+      padding: 10px 0;
+    }
 
+    .admin-sidebar-content li {
+      margin: 10px 0;
+    }
+
+    .admin-sidebar-content li a {
+      display: block;
+      padding: 10px 0 10px 30px;
+    }
+
+    .admin-sidebar-content li.active a {
+      background-color: #30A197;
+      color: #fff;
+    }
+
+    .admin-sidebar-content {
+      padding: 20px 0;
+    }*/
 .admin-submenu-container h1 {
   margin-bottom: 10px;
 }
@@ -112,41 +102,23 @@
   margin-bottom: 50px;
 }
 
-.admin-submenu ul ul li {
+.admin-submenu li {
   display: inline-block;
   padding: 20px 10px;
 }
 
-.admin-submenu ul li:first-child {
+.admin-submenu li:first-child {
   padding-left: 0;
 }
 
-.admin-submenu ul li.active {
+.admin-submenu li.active {
   -webkit-box-shadow: inset 0px -3px 0px 0px #30a197;
   -moz-box-shadow: inset 0px -3px 0px 0px #30a197;
   box-shadow: inset 0px -3px 0px 0px #30a197;
 }
 
-.admin-submenu ul a {
+.admin-submenu a {
   font-size: 16px;
-}
-
-.todo ul li {
-  margin: 10px 10px;
-  border-left: 5px solid black;
-  border-bottom: 1px solid black;
-  background-color: #efefef;
-  display: block !important;
-}
-
-.todo ul li a:link, .todo ul li a:active, .todo ul li a:visited {
-  text-decoration: none;
-  display: block;
-  padding: 15px 20px;
-}
-
-.todo ul li a:hover {
-  background-color: #ddd;
 }
 
 .select:hover {
@@ -155,7 +127,7 @@
 
 .data-table {
   display: block;
-  padding: 0 30px 0 10px;
+  padding: 0 30px 0 30px;
 }
 
 .login-wrapper {
